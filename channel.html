@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Телеканалы</title>
+    <link rel="stylesheet" href="css/channel.css">
+</head>
+    <body>
+        <div class="container">
+        <header class="header">
+            <div class="header__logo">
+                <img class="header__logo-img" src="imges/sign.png" alt="logo">
+                <p class="header__logo-p">Видеосервис</p>
+            </div>
+            <form class="header__search" action="">
+                <input class="header__search-txt" type="text" placeholder="Поиск...">
+                <input class="header__search-btn" type="button" value="Найти">
+            </form>
+            <form action="header__auth">
+                <label for="login-toggle" class="header__auth-btn">Войти</label>
+            </form>
+        </header>
+        </div>
+<main class="channels">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Фильмы</a>
+                <a class="nav-link" href="channel.html">Телеканалы</a>
+            </nav>
+    <div class="channel">
+        <div class="channel-logo">
+            <img src="imges/first.png" alt="Первый канал">
+        </div>
+        <div class="channel-program">
+            <h3>Первый канал</h3>
+            <p class="channel-program-p">13:00 Новости (с субтитрами)</p>
+            <p>14:00 Давай поженимся</p>
+            <p>15:00 Другие новости</p>
+        </div>
+    </div>
+    <div class="channel">
+        <div class="channel-logo">
+            <img src="imges/2x2.png" alt="2x2">
+        </div>
+        <div class="channel-program">
+            <h3>2x2</h3>
+            <p class="channel-program-p">13:00 Мульт ТВ. Сезон 4, 7 серия</p>
+            <p>14:00 ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</p>
+            <p>15:00 БУРДАШЕВ. Сезон 1, 20 серия</p>
+        </div>
+    </div>
+    <div class="channel">
+        <div class="channel-logo">
+            <img src="imges/rbc.png" alt="РБК">
+        </div>
+
+        <div class="channel-program">
+            <h3>РБК</h3>
+            <p class="channel-program-p">13:00 ДЕНЬ. Горячая смесь: как бороться с сюрпризом на АЗС</p>
+            <p>14:00 ДЕНЬ. Главные темы</p>
+            <p>15:00 Главные новости</p>
+        </div>
+    </div>
+    <div class="channel">
+        <div class="channel-logo">
+            <img src="imges/amedia.png" alt="Amedia Premium">
+        </div>
+
+        <div class="channel-program">
+            <h3>AMEDIA PREMIUM</h3>
+            <p class="channel-program-p">13:00 Клиент всегда мёртв</p>
+            <p>14:00 Голландские игры: Сойка-пересмешница. Часть I</p>
+            <p>15:00 Секс в большом городе</p>
+        </div>
+    </div>
+</main>
+<footer>
+   <div class="container footer-container">
+                <img src="imges/logo.png" alt="logo">
+                <div class="footer-info">
+                <p class="footer-info__p">426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</p>
+                <p class="footer-info__p">+7 (3412) 93-88-61, 43-29-29</p>
+                <a href="http://htc-cs.ru" class="footer-info__a">htc-cs.ru</a>
+                </div>
+            </div>
+</footer>
+<input type="checkbox" id="login-toggle">
+<div class="login-overlay">
+    <div class="login-window">
+        <label for="login-toggle" class="close-window"></label>
+        <h2>Вход</h2>
+        <form>
+            <input type="text" placeholder="Логин">
+            <input type="password" placeholder="Пароль">
+            <label class="remember">
+                <input type="checkbox">
+                Запомнить
+            </label>
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

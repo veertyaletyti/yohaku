@@ -1,0 +1,437 @@
+/* Шрифты проекта */
+@font-face {
+    font-family: Rubik-Medium;
+    src: url(../fonts/Rubik-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Rubik-Regular;
+    src: url(../fonts/Rubik-Regular.ttf);
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    background: #ffffff;
+    font-family: Rubik-Medium, Arial, sans-serif;
+}
+.site-container,
+.site-content {
+    max-width: 1180px;
+}
+.header {
+    min-height: 40px;
+    margin-top: 32px;
+    gap: 24px;
+}
+.header__logo {
+    flex-shrink: 0;
+}
+.header__logo-p {
+    margin-left: 11.88px;
+    color: #333333;
+    font-size: 20px;
+}
+.header__search {
+    width: min(100%, 400px);
+}
+.header__search-txt.form-control {
+    min-width: 0;
+    height: 25px;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #333333;
+    border-radius: 0;
+    box-shadow: none;
+    color: #333333;
+    font-family: Rubik-Medium, Arial, sans-serif;
+    font-size: 16px;
+}
+.header__search-txt::placeholder {
+    color: #828282;
+    opacity: 1;
+}
+.header__search-btn.btn {
+    flex: 0 0 auto;
+    margin-left: 24px;
+    padding: 0;
+    border: 0;
+    color: #e5261e;
+    font-family: Rubik-Medium, Arial, sans-serif;
+    font-size: 16px;
+}
+.header__search-btn:hover,
+.header__search-btn:focus {
+    color: #cc221b;
+}
+.header__auth-btn.btn {
+    display: inline-flex;
+    width: 113px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    background: #e5261e;
+    color: #ffffff;
+    font-family: Rubik-Medium, Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.header__auth-btn.btn:hover {
+    background: #cc221b;
+    color: #ffffff;
+}
+
+.site-nav {
+    width: min(311px, calc(100% - 32px));
+    height: 42px;
+    gap: 48px;
+    margin: 44px auto 32px;
+}
+.site-nav-link {
+    color: #333333;
+    font-family: Rubik-Medium, Arial, sans-serif;
+    font-size: 28px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.site-nav-link:hover {
+    padding-bottom: 9px;
+    border-bottom: 2px solid #e5261e;
+    color: #e5261e;
+}
+.movies {
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto;
+}
+.movies-h,
+.genres-p {
+    margin-bottom: 16px;
+    color: #333333;
+    font-family: Rubik-Medium, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+.news {
+    --bs-gutter-x: 20px;
+    --bs-gutter-y: 24px;
+}
+.news-item {
+    position: relative;
+    min-width: 0;
+}
+.news-item__img {
+    display: block;
+    width: 100%;
+    height: 370px;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.news-item__p {
+    width: 100%;
+    margin: 16px 0 0;
+    color: #333333;
+    font-family: Rubik-Medium, Arial, sans-serif;
+    font-size: 20px;
+}
+.news-item__desc {
+    position: absolute;
+    top: 0;
+    left: calc(var(--bs-gutter-x) / 2);
+    width: calc(100% - var(--bs-gutter-x));
+    height: 370px;
+    margin: 0;
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(51, 51, 51, 0.8);
+    color: #f2f2f2;
+    font-family: Rubik-Medium, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+.news-item:hover .news-item__desc {
+    opacity: 1;
+}
+.genres {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 24px;
+}
+.genres-item {
+    --bs-gutter-x: 20px;
+    --bs-gutter-y: 20px;
+}
+.ganres-item {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+.ganres-item-emj {
+    margin: 0;
+    font-size: 48px;
+}
+.comedy {
+    background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+}
+.drama {
+    background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
+}
+.fantasy {
+    background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
+}
+.scary {
+    background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+}
+.ganres-item-txt {
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+    color: #ffffff;
+    font-family: Rubik-Medium, Arial, sans-serif;
+    font-size: 20px;
+}
+.ganres-item:hover {
+    opacity: 1;
+}
+
+.footer {
+    margin-top: 72px;
+    background: #f2f2f2;
+}
+.footer-container {
+    min-height: 120px;
+    gap: 40px;
+}
+.footer-info__p {
+    margin-bottom: 4px;
+    color: #333333;
+    font-family: Rubik-Medium, Arial, sans-serif;
+    font-size: 16px;
+}
+.footer-info__a {
+    color: #1f4766;
+    font-family: Rubik-Medium, Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Модальное окно авторизации */
+#login-toggle {
+    display: none;
+}
+.login-overlay {
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.4);
+}
+#login-toggle:checked ~ .login-overlay {
+    display: flex;
+}
+.login-window {
+    position: relative;
+    width: min(320px, 100%);
+    min-height: 380px;
+    padding: 30px;
+    border-radius: 10px;
+    background: #ffffff;
+    text-align: center;
+}
+.close-window {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+.close-window::before,
+.close-window::after {
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 18px;
+    height: 2px;
+    background: #333333;
+    content: "";
+    transform: rotate(45deg);
+}
+.close-window::after {
+    transform: rotate(-45deg);
+}
+.login-window h2 {
+    margin-bottom: 25px;
+    color: #333333;
+    font-family: Rubik-Medium, Arial, sans-serif;
+    font-size: 28px;
+}
+.login-window form > input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border: 0;
+    border-bottom: 1px solid #999999;
+    outline: none;
+    font-family: Rubik-Regular, Arial, sans-serif;
+    font-size: 16px;
+}
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+    font-family: Rubik-Regular, Arial, sans-serif;
+    font-size: 15px;
+}
+.remember input[type="checkbox"] {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+}
+.remember input[type="checkbox"]:checked::after {
+    width: 4px;
+    height: 8px;
+    margin-bottom: 2px;
+    border: solid #e5261e;
+    border-width: 0 2px 2px 0;
+    content: "";
+    transform: rotate(45deg);
+}
+.login-window button {
+    margin-top: 80px;
+    padding: 12px 25px;
+    border: 0;
+    border-radius: 5px;
+    background: #e53935;
+    color: #ffffff;
+    font-family: Rubik-Regular, Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Планшеты */
+@media (max-width: 991.98px) {
+    .site-container,
+    .site-content {
+        max-width: 720px;
+    }
+    .header {
+        gap: 20px;
+    }
+    .header__search {
+        max-width: 320px;
+    }
+    .news-item__img,
+    .news-item__desc {
+        height: 330px;
+    }
+    .news-item__desc {
+        font-size: 14px;
+    }
+    .footer-container {
+        gap: 24px;
+    }
+}
+
+/* Телефоны */
+@media (max-width: 767.98px) {
+    .site-container,
+    .site-content {
+        width: 100%;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .header {
+        margin-top: 20px;
+        gap: 18px;
+    }
+    .header__search {
+        width: 100%;
+        max-width: 480px;
+    }
+    .header__auth-form {
+        align-self: center;
+    }
+    .site-nav {
+        gap: 32px;
+        margin: 30px auto 24px;
+    }
+    .site-nav-link {
+        font-size: 24px;
+    }
+    .movies {
+        margin-top: 24px;
+    }
+    .news-item__img,
+    .news-item__desc {
+        height: 370px;
+    }
+    .news-item__p {
+        font-size: 18px;
+    }
+    .genres-item {
+        --bs-gutter-x: 16px;
+        --bs-gutter-y: 16px;
+    }
+    .ganres-item {
+        height: 160px;
+    }
+    .footer-container {
+        flex-direction: column;
+        padding: 24px 16px;
+        text-align: center;
+        gap: 16px;
+    }
+    .footer-info__p {
+        overflow-wrap: anywhere;
+    }
+}
+
+/* Узкие телефоны */
+@media (max-width: 400px) {
+    .site-nav-link {
+        font-size: 21px;
+    }
+    .news-item__img,
+    .news-item__desc {
+        height: 340px;
+    }
+    .ganres-item {
+        height: 140px;
+    }
+    .ganres-item-emj {
+        font-size: 40px;
+    }
+    .ganres-item-txt {
+        bottom: 14px;
+        font-size: 17px;
+    }
+}
